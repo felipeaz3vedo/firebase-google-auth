@@ -14,14 +14,6 @@ export const Signin = () => {
     }
   };
 
-  const handleSignOut = async () => {
-    try {
-      await logOut();
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
     if (user !== null) navigate('/account');
   }, [user]);
