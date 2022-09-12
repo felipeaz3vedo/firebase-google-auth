@@ -20,9 +20,14 @@ export const Signin = () => {
 
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold py-8"></h1>
+      <h1 className=" text-3xl font-bold py-8">Login</h1>
       <div>
-        <button onClick={handleGoogleSignin}>google</button>
+        <button
+          className="border-2 bg-red-700 border-black  text-3xl font-bold py-8"
+          onClick={handleGoogleSignin}
+        >
+          Sign in com o google
+        </button>
       </div>
     </div>
   );
